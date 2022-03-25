@@ -24,7 +24,3 @@
   * [APNS 인증 정보 설정](documentation/project/apns-setting.md)
 * [메시지](documentation/message/README.md)
   * [Android: 알림 아이콘 설정](documentation/message/android-notification-icon.md)
-
-***
-
-* [임시 문서](how-to-allow-web-permission.md)
