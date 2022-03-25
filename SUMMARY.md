@@ -27,4 +27,4 @@
 
 ***
 
-* [임시 문서](undefined.md)
+* [임시 문서](how-to-allow-web-permission.md)
