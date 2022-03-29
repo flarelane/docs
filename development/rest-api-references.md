@@ -30,11 +30,15 @@ API 종류는 계속 추가될 예정입니다.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="body" type="string" required="false" %}
-메시지 내용
+메시지 내용. templateId 와 body 중 하나는 반드시 존재해야 합니다.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="url" type="string" %}
 메시지 url
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="data" type="object" %}
+{key:value} 형태의 추가 변수 제공
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="project-id" type="string" %}
