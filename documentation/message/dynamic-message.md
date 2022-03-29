@@ -32,6 +32,6 @@ POST https://api.flarelane.com/v1/projects/<project-id>/notifications
 }
 ```
 
-* 콘솔 사용 시 아래와 같이 값을 입력할 수 있는 표가 출력됩니다
+* **콘솔 사용 시** 아래와 같이 값을 입력할 수 있는 표가 출력됩니다
 
 ![](<../../.gitbook/assets/스크린샷 2022-03-29 오후 4.52.16.png>)
