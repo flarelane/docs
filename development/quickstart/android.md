@@ -52,7 +52,7 @@ dependencyResolutionManagement {
 ```java
 dependencies {
   // 아래 코드 추가
-  implementation 'com.github.flarelane:FlareLane-Android-SDK:1.0.11'
+  implementation 'com.github.flarelane:FlareLane-Android-SDK:1.0.13'
 }
 ```
 {% endtab %}
