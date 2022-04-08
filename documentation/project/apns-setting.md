@@ -33,8 +33,8 @@ Apple Developer 내 [Membership 페이지](https://developer.apple.com/account/#
 
 ![](<../../.gitbook/assets/스크린샷 2021-10-08 오전 11.25.38.png>)
 
-## 3. FlareLane 연동
+## 3. 플레어레인 연동
 
-2에서 확인한 인증 정보를 FlareLane 프로젝트 설정 화면의 APNS 입력란에 차례로 입력합니다.
+2에서 확인한 인증 정보를 플레어레인 채널 설정 중 APNS 입력란에 차례로 입력합니다.
 
-![](<../../.gitbook/assets/스크린샷 2021-10-08 오전 11.28.36.png>)
+![](../../.gitbook/assets/iosset.png)
