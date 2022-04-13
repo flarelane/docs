@@ -56,7 +56,7 @@ end
 SwiftUI 프로젝트의 경우 초기에 AppDelegate.swift 파일이 존재하지 않습니다. 따라서 신규 AppDelegate 파일을 우선 만들어주셔야 합니다.&#x20;
 {% endhint %}
 
-`AppDelegate.swift` 파일을 만들고 `<YOUR_PROJECT_NAME>SwiftUIApp.swift` 파일을 일부 수정합니다.
+`AppDelegate.swift` 파일을 만들고 `<YOUR_PROJECT_NAME>App.swift` 파일을 일부 수정합니다.
 
 {% tabs %}
 {% tab title="(신규) AppDelegate.swift" %}
