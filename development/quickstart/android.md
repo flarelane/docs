@@ -117,6 +117,8 @@ class MainApplication : Application() {
 
 ## 함께보기
 
+#### Android 앱의 알림 아이콘 설정이 필요하다면 아래 가이드를 참고하세요.
+
 {% content-ref url="../../documentation/message/android-notification-icon.md" %}
 [android-notification-icon.md](../../documentation/message/android-notification-icon.md)
 {% endcontent-ref %}

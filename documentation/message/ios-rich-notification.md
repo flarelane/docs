@@ -12,6 +12,8 @@ Flutter: 1.0.4 이후
 
 iOS에서는 이미지 등 미디어 첨부를 위해 `Notification Service Extension` 생성이 필요합니다.
 
+플레어레인을 사용하면 본 과정 또한 매우 쉽게 가능합니다.
+
 ### 1. Notification Service Extension 생성 <a href="#adding-a-notification-service-extension" id="adding-a-notification-service-extension"></a>
 
 Xcode 에서 File > New > Target 에서 `Notification Service Extension` 을 선택합니다.

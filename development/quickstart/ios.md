@@ -135,3 +135,12 @@ iOS 시뮬레이터는 푸시 지원이 되지 않으니 실제 기기를 통해
 앱 실행을 한 뒤, 콘솔 내 \[전체 기기] 페이지를 클릭하여 기기가 추가된 것을 확인해보세요!
 
 ![](<../../.gitbook/assets/스크린샷 2021-12-15 오후 11.19.00.png>)
+
+## 함께 보기
+
+#### iOS 앱의 이미지 등 미디어 첨부를 위해서는 아래 가이드를 참고하세요.&#x20;
+
+{% content-ref url="../../documentation/message/ios-rich-notification.md" %}
+[ios-rich-notification.md](../../documentation/message/ios-rich-notification.md)
+{% endcontent-ref %}
+
