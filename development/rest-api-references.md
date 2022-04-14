@@ -34,7 +34,11 @@ API 종류는 계속 추가될 예정입니다.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="url" type="string" %}
-메시지 url
+메시지 URL
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="imageUrl" type="string" %}
+첨부할 이미지 URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="data" type="object" %}

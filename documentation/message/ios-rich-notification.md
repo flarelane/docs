@@ -14,7 +14,7 @@ iOS에서는 이미지 등 미디어 첨부를 위해 `Notification Service Ext
 
 플레어레인을 사용하면 본 과정 또한 매우 쉽게 가능합니다.
 
-### 1. Notification Service Extension 생성 <a href="#adding-a-notification-service-extension" id="adding-a-notification-service-extension"></a>
+## 1. Notification Service Extension 생성 <a href="#adding-a-notification-service-extension" id="adding-a-notification-service-extension"></a>
 
 Xcode 에서 File > New > Target 에서 `Notification Service Extension` 을 선택합니다.
 
@@ -32,7 +32,7 @@ TARGETS 에서 생성된 Extension의 Deployment Info를 정식 앱과 동일한
 
 ![](<../../.gitbook/assets/스크린샷 2022-04-14 오후 5.21.46.png>)
 
-### 2. Extension에 SDK 연동
+## 2. Extension에 SDK 연동
 
 Xcode 종료 후 Podfile 에 다음 코드를 추가합니다.
 
@@ -49,7 +49,7 @@ end
 
 `pod install` 를 실행하여 SDK 설치를 완료합니다
 
-### 3. Extension 코드 수정
+## 3. Extension 코드 수정
 
 다시 Xcode를 실행하여 생성한 Extension 파일을 수정합니다. 자동으로 채워진 코드들을 지우고 플레어레인이 제공하는 클래스를 상속함으로써 쉽게 설정할 수 있습니다.
 
