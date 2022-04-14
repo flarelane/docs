@@ -34,20 +34,21 @@ TARGETS 에서 생성된 Extension의 Deployment Info를 정식 앱과 동일한
 
 ## 2. Extension에 SDK 연동
 
-Xcode 종료 후 Podfile 에 다음 코드를 추가합니다.
+Xcode 종료 후 `Podfile` 에 다음 코드를 추가합니다.
 
-```
-# 파일 최상단에 아래 줄을 추가하여 Dynamic Framework를 활성화합니다
+```swift
+// 파일 최상단에 아래 줄을 추가하여 Dynamic Framework를 활성화합니다.
 use_frameworks!
 
-# 앞서 입력한 Extension의 Product Name 이 target 입니다.
-# 본 가이드에서는 FlareLaneNotificationServiceExtension 입니다
+// 아래 줄을 추가하여 생성한 Extension 을 타겟으로 SDK를 연동합니다.
+// 앞서 입력한 Extension의 Product Name 이 target 입니다.
+// 본 가이드에서는 FlareLaneNotificationServiceExtension 입니다.
 target 'FlareLaneNotificationServiceExtension' do
   pod 'FlareLane'
 end
 ```
 
-`pod install` 를 실행하여 SDK 설치를 완료합니다
+`pod install` 를 실행하여 SDK 설치를 완료합니다.
 
 ## 3. Extension 코드 수정
 
@@ -68,13 +69,13 @@ class NotificationService: FlareLaneNotificationServiceExtension {
 {% tab title="Objective-C" %}
 {% code title="NotificationService.h/.m" %}
 ```objectivec
-# NotificationService.h
+// NotificationService.h
 @import FlareLane;
 
 @interface NotificationService : FLNNotificationServiceExtension
 @end
 
-# NotificationService.m
+// NotificationService.m
 #import "NotificationService.h"
 
 @implementation NotificationService
