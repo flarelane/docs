@@ -18,7 +18,14 @@ API 종류는 계속 추가될 예정입니다.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="targetIds" type="string[]" required="true" %}
-발송 대상의 id 배열
+발송 대상의 id 배열\
+\* targetType별 최대 개수
+
+&#x20; \- segment: 5
+
+&#x20; \- device: 100
+
+&#x20; \- userId: 1
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="templateId" type="string" %}
