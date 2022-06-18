@@ -37,3 +37,11 @@
   * [Semantic Versioning](https://semver.org/) 규격에 의거한 버전 비교
 * **SDK 버전**: 기기에 설치된 SDK 버전을 통해 기기를 분류
   * [Semantic Versioning](https://semver.org/) 규격에 의거한 버전 비교
+
+
+
+|     |      |       |
+| --- | ---- | ----- |
+| 123 | asd  | fgfg  |
+| aaa | fsdf | sfsdf |
+|     |      |       |
