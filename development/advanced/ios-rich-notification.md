@@ -1,4 +1,4 @@
-# iOS: Rich Notification
+# iOS: Rich Notification
 
 {% hint style="info" %}
 지원되는 SDK 버전을 반드시 확인하세요
@@ -10,7 +10,7 @@ React Native: 1.0.11 이후
 Flutter: 1.0.4 이후
 {% endhint %}
 
-iOS에서는 이미지 등 미디어 첨부를 위해 `Notification Service Extension` 생성이 필요합니다.
+iOS에서는 이미지 등 미디어 첨부를 위해 `Notification Service Extension` 생성이 필요합니다.
 
 플레어레인을 사용하면 본 과정 또한 매우 쉽게 가능합니다.
 

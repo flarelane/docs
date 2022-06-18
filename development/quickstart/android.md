@@ -1,12 +1,12 @@
-# Android 시작하기
+# Android 연동하기
 
 ## 1. 사전 준비
 
 * [FlareLane 콘솔](https://console.flarelane.com) 에서 회원가입 후 프로젝트 생성
 * FCM 인증 정보 설정 (아래 페이지 참고)
 
-{% content-ref url="../../documentation/project/fcm-setting.md" %}
-[fcm-setting.md](../../documentation/project/fcm-setting.md)
+{% content-ref url="../advanced/channel/fcm-setting.md" %}
+[fcm-setting.md](../advanced/channel/fcm-setting.md)
 {% endcontent-ref %}
 
 ## 2. Gradle을 사용하여 SDK 연동
@@ -119,8 +119,8 @@ class MainApplication : Application() {
 
 #### Android 앱의 알림 아이콘 설정이 필요하다면 아래 가이드를 참고하세요.
 
-{% content-ref url="../../documentation/message/android-notification-icon.md" %}
-[android-notification-icon.md](../../documentation/message/android-notification-icon.md)
+{% content-ref url="../advanced/android-notification-icon.md" %}
+[android-notification-icon.md](../advanced/android-notification-icon.md)
 {% endcontent-ref %}
 
 

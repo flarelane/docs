@@ -1,22 +1,93 @@
-# Home
+---
+description: 연동부터 기본 사용 방법까지, 플레어레인 도입 절차에 대해 안내합니다.
+---
 
-이 문서에서는 플레어레인 SDK 연동 및 앱푸시를 더욱 잘 사용할 수 있는 방법을 소개합니다.
+# 🚀 시작하기
 
-## Quickstart: 연동부터 첫 푸시 발송까지
+![](<.gitbook/assets/Show\_img-01\_1 (1).png>)
 
-{% content-ref url="development/quickstart/android.md" %}
-[android.md](development/quickstart/android.md)
+**안녕하세요. 차세대 푸시 마케팅 플랫폼, 플레어레인입니다.**
+
+**본 가이드를 통해 간단한 사용예와 함께 플레어레인 연동 방법을 소개하겠습니다.**
+
+### 1. SDK 연동
+
+플레어레인에 기기를 등록하려면 먼저 앱에 플레어레인 SDK를 탑재해야합니다. 그리고 SDK가 연동된 앱이 처음 실행될 때, 플레어레인에 자동으로 기기가 등록됩니다.
+
+플레어레인은 여러분들의 개발 편의를 위해 **Native Android, iOS 뿐만 아니라 React Native, Flutter와 같은 크로스 플랫폼 SDK까지 함께 제공**합니다.
+
+{% content-ref url="development/quickstart/" %}
+[quickstart](development/quickstart/)
 {% endcontent-ref %}
 
-{% content-ref url="development/quickstart/ios.md" %}
-[ios.md](development/quickstart/ios.md)
+### **2. (권장) 기기에 유저 ID 설정**
+
+만약 여러분 서비스에서 A 유저에게 푸시 발송을 하려 한다면 A 유저의 기기가 무엇인지 먼저 알아야합니다.
+
+지금은 방금 과정을 통해 기기 등록은 마쳤지만 기기의 주인이 누구인지는 모르는 상태입니다.
+
+이런 경우, '유저 ID' 가 매우 유용합니다. **여러분 서비스에서 A 유저를 이미 분류하던 고유한 값(이메일, ID 등)**을 기기에 부여함으로써 해당 유저와 기기를 연결지을 수 있게 됩니다.
+
+### **3. (선택) 기기에 태그 설정**
+
+유저 ID 외 **더 많은 유저 정보들은, 기기에 '태그'로 설정**할 수 있습니다.
+
+'태그'는 여러 키-값 쌍을 넣을 수 있도록 되어있습니다. 예를 들어 '김철수'라는 이름의 2건의 구매기록을 가진 24세의 남자 유저의 경우, 다음과 같은 형태로 설정할 수 있습니다.
+
+```
+{
+  "name": "김철수",
+  "gender": "male",
+  "age": 24,
+  "order_count": 2
+}
+```
+
+이렇게 입력된 추가 정보는 기기들을 더욱 다채롭게 그룹화할 수 있는 기준이 되며, 개인화 메시지를 위한 기반 데이터로 활용할 수 있습니다.
+
+### **4. (선택) 세그먼트 생성**
+
+짧은 시간에 가파르게 앱이 성장하며 유저 수가 많아졌습니다. 🎉
+
+후속 마케팅으로, 여전히 '구매 이력이 없는 남성' 유저들을 대상으로 '첫 구매 유도' 푸시 발송을 하려 합니다.
+
+**다행히 앞선 '태그' 설정으로 기기 정보가 더욱 풍부해진 덕분에, 어떠한 추가 개발 없이 즉시 기기들을 분류할 수 있겠네요!**
+
+('태그' 기준으로 'order\_count' = 0 AND 'gender' = 'men' 인 조건을 충족하는 세그먼트를 생성)
+
+{% content-ref url="documentation/segment.md" %}
+[segment.md](documentation/segment.md)
 {% endcontent-ref %}
 
-{% content-ref url="development/quickstart/react-native.md" %}
-[react-native.md](development/quickstart/react-native.md)
+### 5. 푸시 알림 발송
+
+이제 푸시 발송 준비를 모두 마쳤습니다. **발송 대상**은 특정 '세그먼트'나 '유저 ID' 등 다양하게 지정할 수 있습니다.
+
+푸시 발송 방법은 크게 2가지가 있습니다.
+
+* **플레어레인 콘솔** 웹사이트에서 직접 대상을 설정하고 수동 푸시 발송
+* **REST API**를 통해 여러분의 서버에서 자동 푸시 발송
+
+**발송 시점 또한 선택이 가능합니다.** 즉시 발송하거나, 특정한 시점에 보내도록 발송을 예약할 수 있습니다.
+
+### 6. (선택) 템플릿 설정
+
+REST API를 통해 특정 상황에서 자동으로 푸시 발송을 하도록 개발자의 도움을 받아 구현을 마쳤습니다.
+
+그러나 아쉽게도, 성과가 저조하여 내용 수정을 하기로 결정했습니다.
+
+코드로 박혀있어 개발자가 수정해줘야 하는데.. 많이 바빠보이고.. 서로 부담스럽게 됐습니다.
+
+**만약 '템플릿'을 사용했더라면, 코드 수정 없이도 스스로 콘솔을 통해 내용 변경이 가능**해 무척 편했을 겁니다.
+
+유저마다 조금씩 다른 내용으로 보내야한다구요? **'변수 할당 메시지' 기능으로 개인화 또한 가능합니다.**
+
+{% content-ref url="documentation/dynamic-message.md" %}
+[dynamic-message.md](documentation/dynamic-message.md)
 {% endcontent-ref %}
 
-{% content-ref url="development/quickstart/flutter.md" %}
-[flutter.md](development/quickstart/flutter.md)
-{% endcontent-ref %}
 
+
+**수고하셨습니다! 이렇게 최적의 플레어레인 연동 방법을 함께 알아봤습니다.**
+
+**다른 가이드 문서를 통해 더욱 자세한 내용도 함께 알아보시길 바라겠습니다.**

@@ -1,4 +1,4 @@
-# React Native, Expo 시작하기
+# React Native, Expo 연동하기
 
 ## 1. 사전 준비
 
@@ -9,12 +9,12 @@ Expo 프로젝트는 Managed workflow 환경에서 벗어나(Ejected) Native Mod
 * [FlareLane 콘솔](https://console.flarelane.com) 에서 회원가입 후 프로젝트 생성
 * FCM, APNS 인증 정보 설정 (아래 페이지 참고)
 
-{% content-ref url="../../documentation/project/fcm-setting.md" %}
-[fcm-setting.md](../../documentation/project/fcm-setting.md)
+{% content-ref url="../advanced/channel/fcm-setting.md" %}
+[fcm-setting.md](../advanced/channel/fcm-setting.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../documentation/project/apns-setting.md" %}
-[apns-setting.md](../../documentation/project/apns-setting.md)
+{% content-ref url="../advanced/channel/apns-setting.md" %}
+[apns-setting.md](../advanced/channel/apns-setting.md)
 {% endcontent-ref %}
 
 ## 2. SDK 설치
@@ -75,13 +75,13 @@ const App: () => Node = () => {
 
 #### Android 앱의 알림 아이콘 설정이 필요하다면 아래 가이드를 참고하세요.
 
-{% content-ref url="../../documentation/message/android-notification-icon.md" %}
-[android-notification-icon.md](../../documentation/message/android-notification-icon.md)
+{% content-ref url="../advanced/android-notification-icon.md" %}
+[android-notification-icon.md](../advanced/android-notification-icon.md)
 {% endcontent-ref %}
 
 #### iOS 앱의 이미지 등 미디어 첨부를 위해서는 아래 가이드를 참고하세요.&#x20;
 
-{% content-ref url="../../documentation/message/ios-rich-notification.md" %}
-[ios-rich-notification.md](../../documentation/message/ios-rich-notification.md)
+{% content-ref url="../advanced/ios-rich-notification.md" %}
+[ios-rich-notification.md](../advanced/ios-rich-notification.md)
 {% endcontent-ref %}
 

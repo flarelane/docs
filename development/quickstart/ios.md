@@ -1,12 +1,12 @@
-# iOS 시작하기
+# iOS 연동하기
 
 ## 1. 사전 준비
 
 * [FlareLane 콘솔](https://console.flarelane.com) 에서 회원가입 후 프로젝트 생성
 * APNS 인증 정보 설정 (아래 페이지 참고)
 
-{% content-ref url="../../documentation/project/apns-setting.md" %}
-[apns-setting.md](../../documentation/project/apns-setting.md)
+{% content-ref url="../advanced/channel/apns-setting.md" %}
+[apns-setting.md](../advanced/channel/apns-setting.md)
 {% endcontent-ref %}
 
 ## 2. CocoaPods을 사용하여 SDK 연동
@@ -140,7 +140,7 @@ iOS 시뮬레이터는 푸시 지원이 되지 않으니 실제 기기를 통해
 
 #### iOS 앱의 이미지 등 미디어 첨부를 위해서는 아래 가이드를 참고하세요.&#x20;
 
-{% content-ref url="../../documentation/message/ios-rich-notification.md" %}
-[ios-rich-notification.md](../../documentation/message/ios-rich-notification.md)
+{% content-ref url="../advanced/ios-rich-notification.md" %}
+[ios-rich-notification.md](../advanced/ios-rich-notification.md)
 {% endcontent-ref %}
 

@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-API 종류는 계속 추가될 예정입니다.
+Body에 JSON 삽입 시, Content-Type이 application/json으로 설정되어야 합니다.
 {% endhint %}
 
 {% swagger baseUrl="https://api.flarelane.com" path="/v1/projects/<project-id>/notifications" method="post" summary="메시지 발송하기" %}

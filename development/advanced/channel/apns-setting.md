@@ -19,11 +19,11 @@ Apple Developer 내 [Identifiers 페이지](https://developer.apple.com/account/
 
 1\. Apple Developer 내 [Key 페이지](https://developer.apple.com/account/resources/authkeys/list)에서 "Apple Push Notifications service" 가 활성화된 키를 생성합니다.
 
-![](<../../.gitbook/assets/스크린샷 2021-10-08 오전 11.21.22.png>)
+![](<../../../.gitbook/assets/스크린샷 2021-10-08 오전 11.21.22.png>)
 
 2\. 키 생성이 완료되면 .p8 파일을 다운받고 Key ID 를 복사해둡니다.&#x20;
 
-![](<../../.gitbook/assets/스크린샷 2021-10-08 오전 11.21.36.png>)
+![](<../../../.gitbook/assets/스크린샷 2021-10-08 오전 11.21.36.png>)
 
 
 
@@ -31,10 +31,10 @@ Apple Developer 내 [Identifiers 페이지](https://developer.apple.com/account/
 
 Apple Developer 내 [Membership 페이지](https://developer.apple.com/account/#!/membership)에서 Team ID 를 확인하실 수 있습니다
 
-![](<../../.gitbook/assets/스크린샷 2021-10-08 오전 11.25.38.png>)
+![](<../../../.gitbook/assets/스크린샷 2021-10-08 오전 11.25.38.png>)
 
 ## 3. 플레어레인 연동
 
 2에서 확인한 인증 정보를 플레어레인 채널 설정 '모바일 푸시' 중 APNS 입력란에 차례로 입력합니다.
 
-![](../../.gitbook/assets/iosset.png)
+![](../../../.gitbook/assets/iosset.png)
